@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Wout Van Gansen contactpagina</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>Contactgegevens</h1>
+      <p>Dit is de portfolio van Wout Van Gansen.</p>
+    </header>
+
+    <nav>
+      <a href="index.html">Startpagina</a>
+      <a href="ervaring.html">Ervaring</a>
+      <a href="cv.html">CV</a>
+      <a href="hobby.html">Hobby's/intresses</a>
+      <a class="active" href="contact.html">Contactpagina</a>
+    </nav>
+    <main>
+      <section class="teksten">
+        <h2>Mijn contactgegevens</h2>
+        <br />
+        <p>
+          Naam en voornaam: Van Gansen Wout<br />
+          E-mailadres: r1092832@student.thomasmore.be
+        </p>
+      </section>
+      <section id="contact">
+        <h2>Contacteer mij</h2>
+        <section action="#" method="post">
+          <div class="form-group">
+            <label for="naam">Naam</label>
+            <input
+              type="text"
+              id="naam"
+              name="naam"
+              placeholder="Vul je naam in"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mailadres</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="voorbeeld@email.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="onderwerp">Onderwerp</label>
+            <input
+              type="text"
+              id="onderwerp"
+              name="onderwerp"
+              placeholder="Waarover gaat je bericht?"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="bericht">Je vraag / bericht</label>
+            <textarea
+              id="bericht"
+              name="bericht"
+              rows="6"
+              placeholder="Schrijf hier je vraag of bericht..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit">Verstuur bericht</button>
+            <button type="reset">Reset</button>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>Gemaakt door Wout Van Gansen.</footer>
+  </body>
+</html>
