@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Wout Van Gansen startpagina</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -13,12 +24,44 @@
       <p>Dit is de portfolio van Wout Van Gansen.</p>
     </header>
 
-    <nav>
-      <a class="active" href="index.html">Startpagina</a>
-      <a href="ervaring.html">Ervaring</a>
-      <a href="cv.html">CV</a>
-      <a href="hobby.html">Hobby's/Intresses</a>
-      <a href="contact.html">Contactpagina</a>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Wout Van Gansen</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Startpagina</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="ervaring.html"
+                >Ervaring</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cv.html">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hobby.html">Hobby's/Intresses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contactpagina</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <main>
@@ -45,11 +88,7 @@
             breiden. Met dit portfolio wil ik laten zien aan welke projecten ik
             werk en welke vaardigheden ik aan het ontwikkelen ben.
           </p>
-          <img
-            class="foto"
-            src="img/profielfoto.webp"
-            alt="profielfoto"
-          />
+          <img class="foto" src="img/profielfoto.jpg" alt="profielfoto" />
         </div>
       </section>
       <section class="teksten">
@@ -100,6 +139,11 @@
         </p>
       </section>
     </main>
-    <footer>Gemaakt door Wout Van Gansen.</footer>
+    <footer>
+      ©Van Gansen Wout
+      <a href="https://www.instagram.com/woutvngnsn/"
+        ><img src="img/instagram.svg" alt="instagram"
+      /></a>
+    </footer>
   </body>
 </html>

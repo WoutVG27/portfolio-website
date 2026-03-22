@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Wout Van Gansen hobby's</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="icon" type="image" href="img/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -13,37 +24,124 @@
       <p>Dit is de portfolio van Wout Van Gansen.</p>
     </header>
 
-    <nav>
-      <a href="index.html">Startpagina</a>
-      <a href="ervaring.html">Ervaring</a>
-      <a href="cv.html">CV</a>
-      <a class="active" href="hobby.html">Hobby's/intresses</a>
-      <a href="contact.html">Contactpagina</a>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Wout Van Gansen</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Startpagina</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="ervaring.html"
+                >Ervaring</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cv.html">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="hobby.html">Hobby's/Intresses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contactpagina</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <main>
-      <div class="hobby">
-        <h2>Mijn hobby's/intresses</h2>
+      <section class="teksten">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 
-        <table id="binnenBuiten">
-          <tr>
-            <th>Binnen</th>
-            <th>Buiten</th>
-          </tr>
-          <tr>
-            <td><a href="#gaming" class="tekstLink">Gaming</a></td>
-            <td><a href="#karten" class="tekstLink">Karten</a></td>
-          </tr>
-          <tr>
-            <td><a href="#piano" class="tekstLink">Piano spelen</a></td>
-            <td><a href="#honden" class="tekstLink">Honden</a></td>
-          </tr>
-          <tr>
-            <td><a href="#lego" class="tekstLink">LEGO bouwen</a></td>
-            <td><a href="#reizen" class="tekstLink">Reizen</a></td>
-          </tr>
-        </table>
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="img/pc.jpg" class="d-block w-100" alt="pc">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Gaming</h5>
+        <p><a href="#gaming">Lees meer</a></p>
       </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/piano.jpg" class="d-block w-100" alt="piano">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Piano spelen</h5>
+        <p><a href="#piano">Lees meer</a></p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/lego.jpg" class="d-block w-100" alt="Lego bouwen">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>LEGO bouwen</h5>
+        <p><a href="#lego">Lees meer</a></p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/karten.jpg" class="d-block w-100" alt="karten">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Karten</h5>
+        <p><a href="#karten">Lees meer</a></p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/yvaenzyta.jpg" class="d-block w-100" alt="honden">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Honden</h5>
+        <p><a href="#honden">Lees meer</a></p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/marrakesh.jpg" class="d-block w-100" alt="marrakesh">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Reizen</h5>
+        <p><a href="#reizen">Lees meer</a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+</div>
+  </section>
+
       <section class="teksten">
         <h2 id="gaming">Gaming</h2>
         <br />
@@ -62,19 +160,18 @@
         <h2 id="piano">Piano spelen</h2>
         <br />
         <div class="fotoPositie">
-        <p>
-          Piano spelen is een hobby waar ik veel rust in vind. Ik leer dit
-          volledig op mezelf en neem geen lessen. In plaats daarvan probeer ik
-          nieuwe liedjes te leren door te oefenen en door video's of tutorials
-          te bekijken. Het is soms een uitdaging, maar dat maakt het ook juist
-          leuk. Wanneer ik merk dat ik vooruitgang maak en een liedje steeds
-          beter kan spelen, geeft dat veel voldoening. Piano spelen helpt mij
-          ook om creatief bezig te zijn en even tot rust te komen. Muziek maken
-          is voor mij een manier om mezelf uit te drukken en mijn concentratie
-          te verbeteren.
-        </p>
-        <img class="foto" src="img/piano.jpg" alt="piano">
-      </div>
+          <p>
+            Piano spelen is een hobby waar ik veel rust in vind. Ik leer dit
+            volledig op mezelf en neem geen lessen. In plaats daarvan probeer ik
+            nieuwe liedjes te leren door te oefenen en door video's of tutorials
+            te bekijken. Het is soms een uitdaging, maar dat maakt het ook juist
+            leuk. Wanneer ik merk dat ik vooruitgang maak en een liedje steeds
+            beter kan spelen, geeft dat veel voldoening. Piano spelen helpt mij
+            ook om creatief bezig te zijn en even tot rust te komen. Muziek
+            maken is voor mij een manier om mezelf uit te drukken en mijn
+            concentratie te verbeteren.
+          </p>
+        </div>
       </section>
       <section class="teksten">
         <h2 id="lego">LEGO bouwen</h2>
@@ -93,55 +190,58 @@
         <h2 id="karten">Karten</h2>
         <br />
         <div class="fotoPositie">
-        <p>
-          Een andere hobby van mij is karten. Ik vind het leuk om de snelheid en
-          de spanning van het rijden te ervaren. Wanneer ik ga karten, probeer
-          ik altijd zo snel mogelijk rondjes te rijden en mijn techniek te
-          verbeteren. Het is een activiteit waarbij concentratie en controle
-          belangrijk zijn, omdat je goed moet sturen, remmen en het juiste
-          moment moet kiezen om sneller te gaan. Vaak ga ik karten met vrienden,
-          wat het nog leuker maakt omdat we elkaar proberen te verslaan en
-          kijken wie de snelste tijd kan rijden. Karten is voor mij een
-          spannende en leuke manier om actief bezig te zijn en plezier te maken.
-        </p>
-        <img class="foto" src="img/karten.jpg" alt="karten">
-      </div>
+          <p>
+            Een andere hobby van mij is karten. Ik vind het leuk om de snelheid
+            en de spanning van het rijden te ervaren. Wanneer ik ga karten,
+            probeer ik altijd zo snel mogelijk rondjes te rijden en mijn
+            techniek te verbeteren. Het is een activiteit waarbij concentratie
+            en controle belangrijk zijn, omdat je goed moet sturen, remmen en
+            het juiste moment moet kiezen om sneller te gaan. Vaak ga ik karten
+            met vrienden, wat het nog leuker maakt omdat we elkaar proberen te
+            verslaan en kijken wie de snelste tijd kan rijden. Karten is voor
+            mij een spannende en leuke manier om actief bezig te zijn en plezier
+            te maken.
+          </p>
+        </div>
       </section>
       <section class="teksten">
         <h2 id="honden">Honden</h2>
         <br />
         <div class="fotoPositie">
-        <p>
-          Ik breng ook graag tijd door met mijn honden. Ik heb twee Schotse
-          collies. Met hen ga ik vaak wandelen en spelen. Tijdens het wandelen
-          kom ik buiten in de natuur, wat erg ontspannend kan zijn. Mijn honden
-          zijn ook erg energiek en speels, waardoor het altijd leuk is om met
-          hen bezig te zijn. Het verzorgen en tijd doorbrengen met mijn honden
-          geeft mij veel plezier.
-        </p>
-        <img class="foto" src="img/yvaenzyta.jpg" alt="honden">
-      </div>
+          <p>
+            Ik breng ook graag tijd door met mijn honden. Ik heb twee Schotse
+            collies. Met hen ga ik vaak wandelen en spelen. Tijdens het wandelen
+            kom ik buiten in de natuur, wat erg ontspannend kan zijn. Mijn
+            honden zijn ook erg energiek en speels, waardoor het altijd leuk is
+            om met hen bezig te zijn. Het verzorgen en tijd doorbrengen met mijn
+            honden geeft mij veel plezier.
+          </p>
+        </div>
       </section>
       <section class="teksten">
         <h2 id="reizen">Reizen</h2>
         <br />
         <div class="fotoPositie">
-        <p>
-          Een hobby die ik ook erg leuk vind, is reizen. Ik vind het interessant
-          om nieuwe plaatsen te ontdekken, andere culturen te leren kennen en
-          nieuwe ervaringen op te doen. Door te reizen zie je hoe mensen in
-          andere landen leven en leer je veel over de wereld. Ik ben al op
-          verschillende mooie bestemmingen geweest, zoals Marrakesh in Marokko,
-          Curaçao en Madeira in Portugal. Elke reis is anders en heeft zijn
-          eigen bijzondere momenten. Tijdens het reizen vind ik het leuk om
-          nieuwe plekken te bezoeken, lokale gerechten te proberen en mooie
-          landschappen te zien. Reizen geeft mij veel nieuwe indrukken en
-          herinneringen die ik nooit zal vergeten.
-        </p>
-        <img class="foto" src="img/marrakesh.jpg" alt="marrakesh">
-      </div>
+          <p>
+            Een hobby die ik ook erg leuk vind, is reizen. Ik vind het
+            interessant om nieuwe plaatsen te ontdekken, andere culturen te
+            leren kennen en nieuwe ervaringen op te doen. Door te reizen zie je
+            hoe mensen in andere landen leven en leer je veel over de wereld. Ik
+            ben al op verschillende mooie bestemmingen geweest, zoals Marrakesh
+            in Marokko, Curaçao en Madeira in Portugal. Elke reis is anders en
+            heeft zijn eigen bijzondere momenten. Tijdens het reizen vind ik het
+            leuk om nieuwe plekken te bezoeken, lokale gerechten te proberen en
+            mooie landschappen te zien. Reizen geeft mij veel nieuwe indrukken
+            en herinneringen die ik nooit zal vergeten.
+          </p>
+        </div>
       </section>
     </main>
   </body>
-  <footer>Gemaakt door Wout Van Gansen.</footer>
+  <footer>
+    ©Van Gansen Wout
+    <a href="https://www.instagram.com/woutvngnsn/"
+      ><img src="img/instagram.svg" alt="instagram"
+    /></a>
+  </footer>
 </html>
